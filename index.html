@@ -1,1 +1,206 @@
-Hello World !
+<!DOCTYPE html>
+        <div id="container">
+            <div id="headerArea">
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="flex">
+                <aside id="leftSidebar">
+                    <h1><a href=""><img src="" width="350" height="80"></a></h1> 
+                    <div class="box">
+                            <h2><p><a href="">Home</a></p></h2>
+                            <h2><p><a href="">Blog</a></p></h2>
+                            <h2><p><a href="">Archive</a></p></h2>
+                            <h2><p><a href="">About</a></p></h2>
+               
+                    </div>
+
+                </aside>
+                <main>
+                    <br>
+                    <p><h1>Welcome!</h1></p>
+                    <br>
+                    <p><h2>
+                        Hi! You've reached the homepage of my blog! Stay as long as you'd like 
+                        and take a look around!!
+                    </h2></p>
+                    <br>
+                    <p>
+                        Everything here is VERY under-construction at the moment, so it'll be 
+                        changing a bit every now and then!
+                    </p>
+                    <br>
+                    <p><h2>Newest Blog Post:</h2></p>
+                    <hr>
+                    <br>
+                <article> 
+				<h3>Some backstory (and a tribute to the people that got me here)</h3> 
+				<p class="post-meta"
+                    style="font-size: smaller;"> 
+					Published on October 1st, 2025 by Emma
+				</p> 
+                <hr>
+                <br>
+                 <p>
+                    I grew up HATING English classes. Hated silent reading time, hated the 
+                    weekly trips to the school library to pick out a library book. I’d try to 
+                    get around it, with comics and graphic novels, or just end up choosing the 
+                    SHORTEST very below my reading level books. Up until the middle of elementary 
+                    school, that’s just how things were, I was a math person and a visual 
+                    artist. <a href="/Users/esilva/Desktop/myblog/blogposts/post_four.html"> 
+                        [Read More]</a>
+                </p>
+			    </article>
+                <hr>
+                <br>
+
+                    <img src="https://media1.tenor.com/m/dxPl_UoR8J0AAAAd/fire-writing.gif">
+
+                </main>
+            </div>
+            <footer id="footer">Writing As A Process, 2025</footer>
+        </div>
+        <!-- THIS IS THE CSS !-->
+    <style>
+    
+
+    body {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+                margin: 0;
+                background-color: #486b56;
+                color: #fceaff;
+            } 
+
+		article { 
+			margin-bottom: 20px; 
+			padding: 10px 20px; 
+			margin-right: 10px; 
+		} 
+
+            * {
+                box-sizing: border-box;
+            }
+
+            *{
+                margin: 0 auto;
+            }
+
+            
+            #container a {
+                color: #e5cedc;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                background-color: #738c7d;
+                /* header color here! */
+                height: 40px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #e2d7ff;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            aside {
+                background-color: #738c7d;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #43256E;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+                height: 900px
+            }
+
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #13092D;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #C9b6be;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            #container {
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+
